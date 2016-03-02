@@ -12,4 +12,5 @@ galaxy_info:
   - redis
   - cache
   - nosql
+  dependencies: []
 
