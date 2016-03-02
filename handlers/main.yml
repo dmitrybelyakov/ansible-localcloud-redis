@@ -1,0 +1,4 @@
+---
+# handlers file for localcloud-common
+- name: restart redis
+  service: name=redis-server state=restarted

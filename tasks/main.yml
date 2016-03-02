@@ -1,0 +1,15 @@
+---
+- name: update apt
+  apt: update_cache=yes
+
+- name: install redis
+  apt: pkg={{item}} state=installed
+  with_items:
+    - redis-server
+    - redis-tools
+  notify:
+    - restart redis
+    
+- name: copy redis.conf over
+  notify: restart redis
+  template: src=redis.conf dest=/etc/redis/redis.conf

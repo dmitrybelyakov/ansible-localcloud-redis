@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  author: Dmitry Belyakov
+  description: This will install redis server and redis CLI on an ubuntu box
+  license: MIT
+  min_ansible_version: 1.2
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+  categories:
+  - redis
+  - cache
+  - nosql
+
