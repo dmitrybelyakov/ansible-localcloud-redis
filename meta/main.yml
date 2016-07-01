@@ -8,8 +8,9 @@ galaxy_info:
   - name: Ubuntu
     versions:
     - trusty
-  categories:
+  galaxy_tags:
   - redis
   - cache
   - nosql
+  dependencies: []  
 
