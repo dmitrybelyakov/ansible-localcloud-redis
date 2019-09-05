@@ -3,10 +3,12 @@
   apt: update_cache=yes
 
 - name: install redis
-  apt: pkg={{item}} state=installed
-  with_items:
-    - redis-server
-    - redis-tools
+  apt: 
+    state: present
+  pkg: [
+    'redis-server',
+    'redis-tools'
+  ]
   notify:
     - restart redis
     
